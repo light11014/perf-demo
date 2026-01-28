@@ -206,6 +206,7 @@ export default function DataTablePage() {
           <Link href="/" className="text-gray-600 hover:text-gray-900">← Home</Link>
           <h1 className="text-2xl font-bold">Customer Data</h1>
           <button
+            id="export-csv-btn"
             onClick={handleExportClick}
             className="text-sm bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
           >
@@ -222,6 +223,7 @@ export default function DataTablePage() {
           </div>
           <div>
             <input
+              id="customer-search-input"
               type="text"
               value={searchTerm}
               onChange={handleSearchChange}
